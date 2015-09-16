@@ -15,6 +15,15 @@ This implementation uses regular Facebook Graph API calls in a three-step approa
 * Undocumented usage of the `q` parameter (`q=*` produced more results than `q=` or just omitting the `q` parameter)
 * The `/search` endpoint "magically" limits the number of results, independent from the `distance` used (larger distance doesn't guarantee more results)
 
+##Installation
+The application can be installed via
+
+`npm install`
+
+in the root directory, and either started with 
+
+`npm start` or `node app.js`.
+
 ##API
 The basic endpoint is `/events`, the port of the application can be set via environment variable.
 
@@ -31,7 +40,7 @@ Non-mandatory parameters
 * `sort`: The results can be sorted by `time`, `distance` or `venue`. If omitted, the events will be returned in the order they were received from the Graph API
 
 ###Query results
-The response will be `application/json` and contain an `events` property contain the array of event objects, as well as a `metadata` property with some stats. See below for an example.
+The response will be `application/json` and contain an `events` property containing the array of event objects, as well as a `metadata` property with some stats. See below for an example.
 
 ###Sample call
 
