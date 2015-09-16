@@ -1,0 +1,15 @@
+{
+  "name": "facebook-events-by-location",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./app"
+  },
+  "dependencies": {
+    "bluebird": "^2.10.0",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "morgan": "~1.6.1",
+    "request-promise": "^0.4.3"
+  }
+}
