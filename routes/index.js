@@ -127,10 +127,12 @@ router.get('/events', function(req, res, next) {
               var eventResultObj = {};
               eventResultObj.venueId = venueId;
               eventResultObj.venueName = venue.name;
-              eventResultObj.cover = venue.cover;
+              eventResultObj.venueCover = venue.cover;
+              eventResultObj.venueProfile = venue.profile;
               eventResultObj.venueLocation = venue.location;
               eventResultObj.eventId = event.id;
               eventResultObj.eventName = event.name;
+              eventResultObj.eventCover = event.cover;
               eventResultObj.eventDescription = event.description;
               eventResultObj.eventStarttime = event.start_time;
               eventResultObj.eventDistance = (haversineDistance([venue.location.latitude, venue.location.longitude], [req.query.lat, req.query.lng], false)*1000).toFixed();

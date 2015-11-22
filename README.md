@@ -52,56 +52,39 @@ The response will be `application/json` and contain an `events` property contain
 {
     "events": [
         {
-            "venueId": "779826698797907",
-            "venueName": "El Puente Presente",
+            "venueId": "460616340718401",
+            "venueName": "Baby's All Right",
+            "venueCover": {
+                "id": "847575375355827",
+                "source": "https://scontent.xx.fbcdn.net/hphotos-xfa1/t31.0-8/s720x720/12265652_847575375355827_6601509754180711535_o.jpg"
+            },
             "venueLocation": {
                 "city": "Brooklyn",
                 "country": "United States",
-                "latitude": 40.7109299,
-                "longitude": -73.9595032,
+                "latitude": 40.70998,
+                "longitude": -73.9634705,
                 "state": "NY",
-                "street": "211 South 4th St",
+                "street": "146 Broadway",
                 "zip": "11211"
             },
-            "eventId": "1491929741120777",
-            "eventName": "Southside Connex & ¡WEPA! Festival",
-            "eventDescription": "All programming for Southside Connex is FREE and open to all ages!\n\nSATURDAY SEPTEMBER 19th\n1:00PM Mariachi Tapatio de Alvaro Paulino\n1:40PM El Puente Dance Ensemble\n1:55PM The Peace Poets\n2:10PM El Puente Dreams in Motion\n2:30PM Contestoria Street Theatre Performance by El Puente CADRE and AgitArte\n3:20PM BombaYo\n4:10PM Formula 4 Merengue Tipico\n5:15PM Los Hacheros Salsa Band\n+ skully games, book talks, corridos de bomba, photo booth and more!\n\nSATURDAY SEPTEMBER 26th\n2-6PM Domino tournament \n1-5PM Yoga classes\n2-6PM Essential oil therapy\n1-6PM Dance classes: bomba, tribal dance, zumba, belly dance, salsa\n2&4PM Puppet show\n+ mediation and stress management, martial arts, DJ, button-making and more!\n\nSouthside Connex is an annual two-day community street festival in Los Sures (Southside of Williamsburg) produced by El Puente Green Light District in collaboration with Southside Merchants and the Brooklyn Chamber of Commerce/Brooklyn Alliance. In conjunction with NYC Department of Transportation’s Weekend Walks program, on September 19th and 26th, 1-6PM, Havemeyer Street between Grand Street and South 4th Street will be closed to vehicle traffic and filled with cultural activities, health and wellness workshops, environmental justice information & resources, and El Puente’s annual ¡WEPA! Festival for Southside Performing Arts on September 19th.",
-            "eventStarttime": "2015-09-19T13:00:00-0400",
-            "eventDistance": "383",
-            "eventTimeFromNow": 277780,
-            "eventStats": {
-                "attendingCount": 93,
-                "declinedCount": 30,
-                "maybeCount": 23,
-                "noreplyCount": 805
-            }
-        },
-        {
-            "venueId": "163102043741893",
-            "venueName": "Magic Bus USA",
-            "venueLocation": {
-                "city": "Brooklyn",
-                "country": "United States",
-                "latitude": 40.7167664,
-                "longitude": -73.9657288,
-                "state": "NY",
-                "street": "240 Kent Avenue",
-                "zip": "11249"
+            "eventId": "1671296009750385",
+            "eventName": "Baby's All Basel | Dec 2 - 6 | Baby's All Right Miami Pop Up",
+            "eventCover": {
+                "id": "1002625069800744",
+                "source": "https://scontent.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/s720x720/12249784_1002625069800744_6143497234204516409_n.png?oh=6e5b3eaa2a369d819d160560173cdbea&oe=56E61E88"
             },
-            "eventId": "939785132750501",
-            "eventName": "Magic Bus USA | 2015 Benefit Gala - Houston",
-            "eventDescription": "Help break the poverty cycle ONE CHILD at a time!\n\nYou are cordially invited to attend the Magic Bus USA | 2015 Benefit Gala. \n\nAn evening of cocktails, dinner, and Magic hosted by:\n- Amit Bhandari \n- Brij Kathuria \n- Gopal Savjani \n- Dr. HD Patel \n- Jugal Malani \n- Mona Parikh \n- Dr. Sunita Moonat \n- Swatantra Jain \n\nTo sponsor or reserve a table, please contact Houston@magicbususa.org\n\nFor tickets, please visit https://magicbususa.givezooks.com/events/2nd-annual-magic-bus-benefit-dinner",
-            "eventStarttime": "2015-09-19T18:00:00-0500",
-            "eventDistance": "678",
-            "eventTimeFromNow": 299380,
+            "eventDescription": "POPLIFE Presents:\n\nBABY'S ALL BASEL\n\nBrooklyn's Baby's All Right is touching down in Miami for a week full of live music & parties!\n\nGet involved in all the fun:\nhttp://epop.life/BabysMiami\n\n21+ \n\n#BabysMiami",
+            "eventStarttime": "2015-12-02T17:00:00-0800",
+            "eventDistance": "103",
+            "eventTimeFromNow": 891186,
             "eventStats": {
-                "attendingCount": 15,
-                "declinedCount": 19,
-                "maybeCount": 7,
-                "noreplyCount": 149
+                "attendingCount": 142,
+                "declinedCount": 0,
+                "maybeCount": 95,
+                "noreplyCount": 1117
             }
         },
-		...
+        ...
     ],
     "metadata": {
         "venues": 350,
