@@ -101,7 +101,7 @@ router.get('/events', function(req, res, next) {
 
       //Create a Graph API request array (promisified)
       ids.forEach(function(idArray, index, arr) {
-        urls.push(rp.get("https://graph.facebook.com/v2.4/?ids=" + idArray.join(",") + "&fields=id,name,location,events.fields(id,name,description,start_time,attending_count,declined_count,maybe_count,noreply_count).since(" + currentTimestamp + ")&access_token=" + req.query.access_token));
+        urls.push(rp.get("https://graph.facebook.com/v2.4/?ids=" + idArray.join(",") + "&fields=id,name,cover,location,events.fields(id,name,description,start_time,attending_count,declined_count,maybe_count,noreply_count).since(" + currentTimestamp + ")&access_token=" + req.query.access_token));
       });
 
       return urls;
@@ -127,6 +127,7 @@ router.get('/events', function(req, res, next) {
               var eventResultObj = {};
               eventResultObj.venueId = venueId;
               eventResultObj.venueName = venue.name;
+              eventResultObj.cover = venue.cover;
               eventResultObj.venueLocation = venue.location;
               eventResultObj.eventId = event.id;
               eventResultObj.eventName = event.name;
