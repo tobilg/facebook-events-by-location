@@ -101,7 +101,7 @@ router.get('/events', function(req, res, next) {
 
       //Create a Graph API request array (promisified)
       ids.forEach(function(idArray, index, arr) {
-        urls.push(rp.get("https://graph.facebook.com/v2.4/?ids=" + idArray.join(",") + "&fields=id,name,cover.fields(id,source),picture,location,events.fields(id,name,cover.fields(id,source),description,start_time,attending_count,declined_count,maybe_count,noreply_count).since(" + currentTimestamp + ")&access_token=" + req.query.access_token));
+        urls.push(rp.get("https://graph.facebook.com/v2.4/?ids=" + idArray.join(",") + "&fields=id,name,cover.fields(id,source),picture.type(large),location,events.fields(id,name,cover.fields(id,source),picture.type(large),description,start_time,attending_count,declined_count,maybe_count,noreply_count).since(" + currentTimestamp + ")&access_token=" + req.query.access_token));
       });
 
       return urls;
@@ -127,23 +127,25 @@ router.get('/events', function(req, res, next) {
               var eventResultObj = {};
               eventResultObj.venueId = venueId;
               eventResultObj.venueName = venue.name;
-              eventResultObj.venueCover = venue.cover;
-              eventResultObj.venueProfile = venue.profile;
-              eventResultObj.venueLocation = venue.location;
+              eventResultObj.venueCoverPicture = (venue.cover ? venue.cover.source : null);
+              eventResultObj.venueProfilePicture = (venue.picture ? venue.picture.data.url : null);
+              eventResultObj.venueLocation = (venue.location ? venue.location : null);
               eventResultObj.eventId = event.id;
               eventResultObj.eventName = event.name;
-              eventResultObj.eventCover = event.cover;
-              eventResultObj.eventDescription = event.description;
-              eventResultObj.eventStarttime = event.start_time;
-              eventResultObj.eventDistance = (haversineDistance([venue.location.latitude, venue.location.longitude], [req.query.lat, req.query.lng], false)*1000).toFixed();
+              eventResultObj.eventCoverPicture = (event.cover ? event.cover.source : null);
+              eventResultObj.eventProfilePicture = (event.picture ? event.picture.data.url : null);
+              eventResultObj.eventDescription = (event.description ? event.description : null);
+              eventResultObj.eventStarttime = (event.start_time ? event.start_time : null);
+              eventResultObj.eventDistance = (venue.location ? (haversineDistance([venue.location.latitude, venue.location.longitude], [req.query.lat, req.query.lng], false)*1000).toFixed() : null);
               eventResultObj.eventTimeFromNow = calculateStarttimeDifference(currentTimestamp, event.start_time);
               eventResultObj.eventStats = {
                 attendingCount: event.attending_count,
                 declinedCount: event.declined_count,
                 maybeCount: event.maybe_count,
                 noreplyCount: event.noreply_count
-              }
+              };
               events.push(eventResultObj);
+              console.log(JSON.stringify(eventResultObj));
               eventsCount++;
             });
           }

@@ -54,10 +54,8 @@ The response will be `application/json` and contain an `events` property contain
         {
             "venueId": "460616340718401",
             "venueName": "Baby's All Right",
-            "venueCover": {
-                "id": "847575375355827",
-                "source": "https://scontent.xx.fbcdn.net/hphotos-xfa1/t31.0-8/s720x720/12265652_847575375355827_6601509754180711535_o.jpg"
-            },
+            "venueCoverPicture": "https://scontent.xx.fbcdn.net/hphotos-xfa1/t31.0-8/s720x720/12265652_847575375355827_6601509754180711535_o.jpg",
+            "venueProfilePicture": "https://scontent.xx.fbcdn.net/hprofile-xft1/v/t1.0-1/p200x200/1480734_642185745894792_5820988503650852577_n.png?oh=fc70de542d587b32e7a8a9183ddb0560&oe=56E4082D",
             "venueLocation": {
                 "city": "Brooklyn",
                 "country": "United States",
@@ -69,18 +67,16 @@ The response will be `application/json` and contain an `events` property contain
             },
             "eventId": "1671296009750385",
             "eventName": "Baby's All Basel | Dec 2 - 6 | Baby's All Right Miami Pop Up",
-            "eventCover": {
-                "id": "1002625069800744",
-                "source": "https://scontent.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/s720x720/12249784_1002625069800744_6143497234204516409_n.png?oh=6e5b3eaa2a369d819d160560173cdbea&oe=56E61E88"
-            },
+            "eventCoverPicture": "https://scontent.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/s720x720/12249784_1002625069800744_6143497234204516409_n.png?oh=6e5b3eaa2a369d819d160560173cdbea&oe=56E61E88",
+            "eventProfilePicture": "https://scontent.xx.fbcdn.net/hphotos-xpa1/v/t1.0-0/c120.0.200.200/p200x200/12249784_1002625069800744_6143497234204516409_n.png?oh=9bc7c7dcd65934ab74010a890d9ac070&oe=56F5E8D3",
             "eventDescription": "POPLIFE Presents:\n\nBABY'S ALL BASEL\n\nBrooklyn's Baby's All Right is touching down in Miami for a week full of live music & parties!\n\nGet involved in all the fun:\nhttp://epop.life/BabysMiami\n\n21+ \n\n#BabysMiami",
             "eventStarttime": "2015-12-02T17:00:00-0800",
             "eventDistance": "103",
-            "eventTimeFromNow": 891186,
+            "eventTimeFromNow": 884065,
             "eventStats": {
-                "attendingCount": 142,
+                "attendingCount": 143,
                 "declinedCount": 0,
-                "maybeCount": 95,
+                "maybeCount": 96,
                 "noreplyCount": 1117
             }
         },
