@@ -24,9 +24,11 @@ function compareTimeFromNow(a,b) {
 }
 
 function compareDistance(a,b) {
-  if (a.eventDistance < b.eventDistance)
+  var aEventDistInt = parseInt(a.eventDistance);
+  var bEventDistInt = parseInt(b.eventDistance);
+  if (aEventDistInt < bEventDistInt)
     return -1;
-  if (a.eventDistance > b.eventDistance)
+  if (aEventDistInt > bEventDistInt)
     return 1;
   return 0;
 }
