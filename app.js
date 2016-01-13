@@ -1,5 +1,4 @@
 var express = require('express');
-var path = require('path');
 var logger = require('morgan');
 var debug = require('debug')('fb-event-location-search:server');
 var http = require('http');
@@ -38,7 +37,7 @@ app.use(function(err, req, res, next) {
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.APP_PORT || '3000');
 app.set('port', port);
 
 /**

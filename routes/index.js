@@ -71,6 +71,10 @@ function haversineDistance(coords1, coords2, isMiles) {
   return d;
 }
 
+router.get('/', function(req, res, next) {
+  res.json({ "message": "Welcome to the Facebook Event Search service!" });
+});
+
 router.get('/events', function(req, res, next) {
 
   if (!req.query.lat || !req.query.lng || !req.query.distance || !req.query.access_token) {
@@ -82,7 +86,7 @@ router.get('/events', function(req, res, next) {
         venuesCount = 0,
         venuesWithEvents = 0,
         eventsCount = 0,
-        placeUrl = "https://graph.facebook.com/v2.4/search?type=place&q=*&center=" + req.query.lat + "," + req.query.lng + "&distance=" + req.query.distance + "&limit=1000&fields=id&access_token=" + req.query.access_token;
+        placeUrl = "https://graph.facebook.com/v2.5/search?type=place&q=*&center=" + req.query.lat + "," + req.query.lng + "&distance=" + req.query.distance + "&limit=1000&fields=id&access_token=" + req.query.access_token;
 
     //Get places as specified
     rp.get(placeUrl).then(function(responseBody) {
@@ -111,7 +115,7 @@ router.get('/events', function(req, res, next) {
 
       //Create a Graph API request array (promisified)
       ids.forEach(function(idArray, index, arr) {
-        urls.push(rp.get("https://graph.facebook.com/v2.4/?ids=" + idArray.join(",") + "&fields=id,name,cover.fields(id,source),picture.type(large),location,events.fields(id,name,cover.fields(id,source),picture.type(large),description,start_time,attending_count,declined_count,maybe_count,noreply_count).since(" + currentTimestamp + ")&access_token=" + req.query.access_token));
+        urls.push(rp.get("https://graph.facebook.com/v2.5/?ids=" + idArray.join(",") + "&fields=id,name,cover.fields(id,source),picture.type(large),location,events.fields(id,name,cover.fields(id,source),picture.type(large),description,start_time,attending_count,declined_count,maybe_count,noreply_count).since(" + currentTimestamp + ")&access_token=" + req.query.access_token));
       });
 
       return urls;

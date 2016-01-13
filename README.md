@@ -16,6 +16,8 @@ This implementation uses regular Facebook Graph API calls in a three-step approa
 * The `/search` endpoint "magically" limits the number of results, independent from the `distance` used (larger distance doesn't guarantee more results)
 
 ##Installation
+
+### As NPM package
 The application can be installed via
 
 `npm install`
@@ -23,6 +25,15 @@ The application can be installed via
 in the root directory, and either started with 
 
 `npm start` or `node app.js`.
+
+### As Docker microservice
+You can build the Docker image via `docker build -t <yourTag> .` locally if you like. Also, there's an official image (called `tobilg/facebook-event-search`) in the Docker hub.
+ 
+The service can be launched via Docker like this:
+
+`docker run -d --name fb-event-search -p 3000:3000 tobilg/facebook-event-search`
+
+This would expose the app on port 3000 on the Docker host. If you want to specify another port for the app, you can use `-e "APP_PORT=10000"` together with `--net="host"` (be aware of the security implications of host networking). 
 
 ##API
 The basic endpoint is `/events`, the port of the application can be set via environment variable.
