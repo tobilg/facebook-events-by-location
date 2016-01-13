@@ -1,7 +1,7 @@
 {
   "name": "facebook-events-by-location",
-  "version": "0.1.1",
-  "private": true,
+  "version": "0.3.0",
+  "private": false,
   "scripts": {
     "start": "node ./app"
   },
