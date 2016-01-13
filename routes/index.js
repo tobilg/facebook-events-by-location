@@ -31,6 +31,14 @@ function compareDistance(a,b) {
   return 0;
 }
 
+function comparePopularity(a,b) {
+  if ((a.eventStats.attendingCount + (a.eventStats.maybeCount / 2)) < (b.eventStats.attendingCount + (b.eventStats.maybeCount / 2)))
+    return 1;
+  if ((a.eventStats.attendingCount + (a.eventStats.maybeCount / 2)) > (b.eventStats.attendingCount + (b.eventStats.maybeCount / 2)))
+    return -1;
+  return 0;
+}
+
 function haversineDistance(coords1, coords2, isMiles) {
 
   //coordinate is [latitude, longitude]
@@ -145,7 +153,6 @@ router.get('/events', function(req, res, next) {
                 noreplyCount: event.noreply_count
               };
               events.push(eventResultObj);
-              console.log(JSON.stringify(eventResultObj));
               eventsCount++;
             });
           }
@@ -153,7 +160,7 @@ router.get('/events', function(req, res, next) {
       });
 
       //Sort if requested
-      if (req.query.sort && (req.query.sort.toLowerCase() === "time" || req.query.sort.toLowerCase() === "distance" || req.query.sort.toLowerCase() === "venue")) {
+      if (req.query.sort && (req.query.sort.toLowerCase() === "time" || req.query.sort.toLowerCase() === "distance" || req.query.sort.toLowerCase() === "venue" || req.query.sort.toLowerCase() === "popularity")) {
         if (req.query.sort.toLowerCase() === "time") {
           events.sort(compareTimeFromNow);
         }
@@ -162,6 +169,9 @@ router.get('/events', function(req, res, next) {
         }
         if (req.query.sort.toLowerCase() === "venue") {
           events.sort(compareVenue);
+        }
+        if (req.query.sort.toLowerCase() === "popularity") {
+          events.sort(comparePopularity);
         }
       }
 

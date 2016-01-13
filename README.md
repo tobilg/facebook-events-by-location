@@ -37,7 +37,7 @@ Mandatory parameters are the following:
 
 Non-mandatory parameters
 
-* `sort`: The results can be sorted by `time`, `distance` or `venue`. If omitted, the events will be returned in the order they were received from the Graph API
+* `sort`: The results can be sorted by `time`, `distance`, `venue` or `popularity`. If omitted, the events will be returned in the order they were received from the Graph API
 
 ###Query results
 The response will be `application/json` and contain an `events` property containing the array of event objects, as well as a `metadata` property with some stats. See below for an example.
@@ -48,7 +48,7 @@ The response will be `application/json` and contain an `events` property contain
 
 ###Sample output (shortened)
 
-```
+```javascript
 {
     "events": [
         {
