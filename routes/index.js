@@ -100,13 +100,17 @@ router.get('/events', function(req, res, next) {
 
       //Create array of 50 places each
       data.forEach(function(idObj, index, arr) {
-        if (tempArray.length < idLimit) {
-          tempArray.push(idObj.id);
-        } else {
+        tempArray.push(idObj.id);
+        if (tempArray.length >= idLimit) {
           ids.push(tempArray);
           tempArray = [];
         }
       });
+
+      // Push the remaining places
+      if (tempArray.length > 0) {
+        ids.push(tempArray);
+      }
 
       return ids;
     }).then(function(ids) {
