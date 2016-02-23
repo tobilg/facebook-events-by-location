@@ -14,20 +14,28 @@ This implementation uses regular Facebook Graph API calls in a three-step approa
 * The Graph API has some "instabilities" with search results. It's possible that the amount of results returned can vary between calls within seconds 
 * Undocumented usage of the `q` parameter (`q=*` produced more results than `q=` or just omitting the `q` parameter)
 * The `/search` endpoint "magically" limits the number of results, independent from the `distance` used (larger distance doesn't guarantee more results)
+* [Rate limiting](https://developers.facebook.com/docs/graph-api/advanced/rate-limiting) will apply, but I experienced no call blocks within a reasonable amount of service requests. Be aware that the way this application works, there are potentially hundreds of (counted) Graph API calls per request to `/events`.
 
 ##Installation
 
 ### As NPM package
-The application can be installed via
+The application can be installed via 
 
-`npm install`
+`npm install facebook-events-by-location`
 
 in the root directory, and either started with 
 
 `npm start` or `node app.js`.
 
+#### Git
+To clone the repository, use
+
+`git clone https://github.com/tobilg/facebook-events-by-location.git`
+
+and run `cd facebook-events-by-location && npm i && npm start` to install the dependencies and run the web service.
+
 ### As Docker microservice
-You can build the Docker image via `docker build -t <yourTag> .` locally if you like. Also, there's an official image (called `tobilg/facebook-event-search`) in the Docker hub.
+You can build the Docker image via `docker build -t <yourTag> .` locally if you like. Also, there's an [official image](https://hub.docker.com/r/tobilg/facebook-event-search/) (called `tobilg/facebook-event-search`) in the Docker hub.
  
 The service can be launched via Docker like this:
 
