@@ -11,8 +11,7 @@ This implementation uses regular Facebook Graph API calls in a three-step approa
 
 ###Known limitations
 
-* The Graph API has some "instabilities" with search results. It's possible that the amount of results returned can vary between calls within seconds 
-* Undocumented usage of the `q` parameter (`q=*` produced more results than `q=` or just omitting the `q` parameter)
+* The Graph API has some "instabilities" with search results. It's possible that the amount of results returned can vary between calls within seconds
 * The `/search` endpoint "magically" limits the number of results, independent from the `distance` used (larger distance doesn't guarantee more results)
 * [Rate limiting](https://developers.facebook.com/docs/graph-api/advanced/rate-limiting) will apply, but I experienced no call blocks within a reasonable amount of service requests. Be aware that the way this application works, there are potentially hundreds of (counted) Graph API calls per request to `/events`.
 
