@@ -9,6 +9,7 @@ This implementation uses regular Facebook Graph API calls in a three-step approa
 2. Use the places to query for their events in parallel (`/?ids={id1},{id2},{id3},...`)
 3. Unify, filter and sort the results from the parallel calls and return them to the client
 
+Please consider that distance refers to the radius with respect to the latitude and longitude of the location in meters.
 ###Known limitations
 
 * The Graph API has some "instabilities" with search results. It's possible that the amount of results returned can vary between calls within seconds
