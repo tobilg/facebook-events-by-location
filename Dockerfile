@@ -15,7 +15,7 @@ ADD . $APP_BASE_PATH
 WORKDIR $APP_BASE_PATH
 
 # Setup of the configurator
-RUN chmod +x app.js && \
+RUN chmod +x index.js && \
     npm install
 
 CMD ["node", "/opt/service/index.js"]
