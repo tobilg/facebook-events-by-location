@@ -1,25 +1,37 @@
 {
   "name": "facebook-events-by-location",
-  "description": "A Express.js-based microservice to get public Facebook events by location.",
-  "keywords": "Facebook,events,event,search,location,microservice,backend,app",
-  "version": "0.4.2",
+  "description": "A Express.js-based microservice to get public Facebook events by location, distance and search terms.",
+  "keywords": [
+    "Facebook",
+    "events",
+    "event",
+    "search",
+    "location",
+    "microservice",
+    "backend",
+    "app"
+  ],
+  "version": "0.5.0",
   "private": false,
   "scripts": {
-    "start": "node ./app"
+    "start": "node ./index"
   },
   "dependencies": {
-    "bluebird": "^2.10.0",
-    "debug": "~2.2.0",
+    "cors": "^2.7.1",
     "express": "~4.13.1",
-    "morgan": "~1.6.1",
-    "request-promise": "^0.4.3"
+    "facebook-events-by-location-core": "^0.1.1",
+    "morgan": "~1.6.1"
   },
   "bugs": {
-    "url" : "https://github.com/tobilg/facebook-events-by-location/issues"
+    "url": "https://github.com/tobilg/facebook-events-by-location/issues"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/tobilg/facebook-events-by-location.git"
+    "type": "git",
+    "url": "https://github.com/tobilg/facebook-events-by-location.git"
+  },
+  "homepage": "https://github.com/tobilg/facebook-events-by-location",
+  "engines": {
+    "node": ">=0.10.0"
   },
   "license": "MIT"
 }

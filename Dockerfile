@@ -1,8 +1,9 @@
-FROM mhart/alpine-node:4.2.4
+FROM mhart/alpine-node:4
 MAINTAINER tobilg <fb.tools.github@gmail.com>
 
 # Overall ENV vars
 ENV APP_BASE_PATH /opt/service
+ENV NODE_ENV production
 
 # Create folder for app
 RUN mkdir -p $APP_BASE_PATH
@@ -17,4 +18,4 @@ WORKDIR $APP_BASE_PATH
 RUN chmod +x app.js && \
     npm install
 
-CMD ["node", "/opt/service/app.js"]
+CMD ["node", "/opt/service/index.js"]
