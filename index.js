@@ -55,7 +55,7 @@ var corsOptions = {
 };
 
 // Main route
-app.get("/events", cors(corsOptions), function(req, res) {
+app.get("/events", function(req, res) {
 
     if (!req.query.lat || !req.query.lng) {
         res.status(500).json({message: "Please specify the lat and lng parameters!"});
