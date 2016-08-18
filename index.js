@@ -78,7 +78,7 @@ app.get("/events", cors(corsOptions), function(req, res) {
         if (req.query.accessToken) {
             options.accessToken = req.query.accessToken;
         } else {
-            options.accessToken = process.env.FEBL_ACCESS_TOKEN;
+            options.accessToken = process.env.FEBL_ACCESS_TOKEN || null;
         }
         if (req.query.query) {
             options.query = req.query.query;
@@ -88,6 +88,12 @@ app.get("/events", cors(corsOptions), function(req, res) {
         }
         if (req.query.version) {
             options.version = req.query.version;
+        }
+        if (req.query.since) {
+            options.since = req.query.since;
+        }
+        if (req.query.until) {
+            options.until = req.query.until;
         }
 
         // Instantiate EventSearch
