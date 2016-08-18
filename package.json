@@ -19,7 +19,7 @@
   "dependencies": {
     "cors": "^2.7.1",
     "express": "~4.13.1",
-    "facebook-events-by-location-core": "^0.1.2",
+    "facebook-events-by-location-core": "^0.1.4",
     "morgan": "~1.6.1"
   },
   "bugs": {
