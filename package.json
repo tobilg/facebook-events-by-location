@@ -11,16 +11,18 @@
     "backend",
     "app"
   ],
-  "version": "0.5.3",
+  "version": "0.5.4",
   "private": false,
   "scripts": {
-    "start": "node ./index"
+    "start": "node ./index",
+    "publish-please": "publish-please",
+    "prepublish": "publish-please guard"
   },
   "dependencies": {
-    "cors": "^2.7.1",
-    "express": "~4.13.1",
-    "facebook-events-by-location-core": "^0.1.4",
-    "morgan": "~1.6.1"
+    "cors": "^2.8.1",
+    "express": "~4.14.0",
+    "facebook-events-by-location-core": "^0.1.5",
+    "morgan": "~1.7.0"
   },
   "bugs": {
     "url": "https://github.com/tobilg/facebook-events-by-location/issues"
@@ -33,5 +35,8 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "publish-please": "^2.2.0"
+  }
 }
