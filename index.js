@@ -60,7 +60,7 @@ app.get("/events", cors(corsOptions), function(req, res) {
     if (!req.query.lat || !req.query.lng) {
         res.status(500).json({message: "Please specify the lat and lng parameters!"});
     } else if (!req.query.accessToken && !process.env.FEBL_ACCESS_TOKEN) {
-        res.status(500).json({message: "Please specify an Access Token, either as environment variable odr as accessToken parameter!"});
+        res.status(500).json({message: "Please specify an Access Token, either as environment variable or as accessToken parameter!"});
     } else {
 
         var options = {};
