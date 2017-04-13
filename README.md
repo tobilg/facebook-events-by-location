@@ -84,38 +84,43 @@ The response will be `application/json` and contain an `events` property contain
 ```javascript
 {
 	"events": [{
-		"id": "163958810691757",
-		"name": "3Bridge Records presents inTRANSIT w/ David Kiss, Deep Woods, Eric Shans",
-		"coverPicture": "https://scontent.xx.fbcdn.net/t31.0-8/s720x720/13679859_10153862492796325_8533542782240254857_o.jpg",
-		"profilePicture": "https://scontent.xx.fbcdn.net/v/t1.0-0/c133.0.200.200/p200x200/13872980_10153862492796325_8533542782240254857_n.jpg?oh=a46813bbf28ad7b8bffb88acd82c7c71&oe=581EF037",
-		"description": "Saturday, August 20th.\n\nJoin the 3Bridge Records team for another night of sound and shenanigans - as we send Deep Woods & David Kiss out to Burning Man & belatedly celebrate Slav Ka's debut release on the label - \"Endless\" - out May 14th, featuring a remix by Mr. Shans.\n\nDavid Kiss (House of Yes)\nhttps://soundcloud.com/davidkiss\n\nDeep Woods (3Bridge Records)\nhttps://soundcloud.com/deep-woods\n\nEric Shans (3Bridge Records)\nhttps://soundcloud.com/eric-shans\n\nSlav Ka (3Bridge Records)\nhttps://soundcloud.com/slinkyslava\n\nFree before 12, $10 after (+ 1 comp well drink). $5 presale available on RA.\n\nhttps://www.residentadvisor.net/event.aspx?863815\n\nStay dope, Brooklyn.",
-		"distance": "203",
-		"startTime": "2016-08-20T22:00:00-0400",
-		"timeFromNow": 481946,
-		"stats": {
-			"attending": 44,
-			"declined": 3,
-			"maybe": 88,
-			"noreply": 1250
-		},
-		"venue": {
-			"id": "585713341444399",
-			"name": "TBA Brooklyn",
-			"coverPicture": "https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/13932666_1397749103574148_4391608711361541993_n.png?oh=2d82be3a458d1ce9ac8fab47cdbc6e26&oe=585E6545",
-			"profilePicture": "https://scontent.xx.fbcdn.net/v/t1.0-1/p200x200/12049351_1300865083262551_8221231831784471629_n.jpg?oh=a30798841ad60dfe5cfabaa4e803c3ad&oe=5854DFB9",
-			"location": {
-				"city": "Brooklyn",
-				"country": "United States",
-				"latitude": 40.711217064583,
-				"longitude": -73.966384349735,
-				"state": "NY",
-				"street": "395 Wythe Ave",
-				"zip": "11249"
-			}
-		}
-	},
-	... 
-	],
+        "id": "194204067750547",
+        "name": "Jessica Hernandez & the Deltas at Baby's All Right",
+        "type": "public",
+        "coverPicture": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/17758407_10158752838305227_652819766277990370_o.jpg?oh=6f1076521abfe609f45c49f03b6ad3a7&oe=59978EB7",
+        "profilePicture": "https://scontent.xx.fbcdn.net/v/t1.0-0/c50.0.200.200/p200x200/17796620_10158752838305227_652819766277990370_n.jpg?oh=b8fd07b35c4f227e4837465e3abe7963&oe=594D43B4",
+        "description": "Tuesday June 13 @ Baby's All Right \n\nAdHoc Presents\n\nJessica Hernandez & The Deltas\n\nTIX: http://ticketf.ly/2oawOtz\n\n| Baby's All Right |\n146 Broadway @ Bedford Ave | Williamsburg, Brooklyn \nJMZ-Marcy, L-Bedford, G-Broadway | 7pm | $12+ | 18+\n\nSign up for the mailing list http://tinyurl.com/adhocfmlist\nSubscribe to our events http://facebook.com/adhocfm/events\n\nUpcoming AdHoc Shows\n\n04/13 Entrance (Guy Blakeslee), Ensalmo, Permanent Waves\n04/13 Kane West, Wharfwhit, Bruce Smear, Honnda\n04/14 Pharmakon (Record Release), Coteries, New Castrati\n04/15 Varsity, Fruit & Flowers, Petite League\n04/15 070Shake\n04/16 Lithics, Pucker Up, Bodega, Giggly Boys\n04/20 Helltrap Nightmare: the Hags Return\n04/20 The Coathangers \n04/21 The Coathangers\n04/22 Wolf Eyes (Record Release)\n04/22 Vatican Shadow\n04/23 Tonstartssbandht at The Park Church Co-op\n04/27 HAUX, Dizzy, Aisha Badru\n04/27 Sam Coffey & The Iron Lungs, Mikey Erg, The Othermen The Lame-Os\n04/27 Screaming Females\n04/28 Joakim, Starchild & The New Romantic\n04/28 Laser Background, Operator Music Band, Norwegian Arms, Railings\n04/29 White Lung\n05/02 Novelty Daughter, Elisa, Zenizen, Nicholas Nicholas\n05/03 The Revolution\n05/04 Emo Nite LA w/ special guests\n05/05 Omni, Honduras, Patio\n05/05 Ava Luna, Sammus, Mallrat\n05/05 Crushed (Record Release) w/ Sick Feeling, Neaux, Slashers\n05/05 Ava Luna, Sammus, Mall Rat\n05/05 Beanie Sigel, Manhattan Mal, Young Ros, Tim Wicked\n05/06 HOW SAD, Salt Cathedral\n05/06 Vagabon, Nnamdi Ogbonnaya, So Much Light\n05/07 Mega Bog, Tasseomancy\n05/09 Frank Carter & The Rattlesnakes, Dinosaur Pile-Up, Royal Republic\n05/09 Radkey\n05/09 Chastity at Shea Stadium\n05/09 Frank Carter & The Rattlesnakes, Dinosaur Pile-Up, Royal Republic\n05/10 Savoy Motel, Lionlimb\n05/10 Forest Swords, Actress, Umfang\n05/11 Tall Heights, Henry Jamison\n05/13 Alex Napping (Record Release), Pearer, gobbinjr, Long Neck\n05/13 Midnight Oil - SOLD OUT\n05/14 Midnight Oil\n05/14 Tall Juan (Record Release), Wild Yaks, Ben Katzman's Degreaser\n05/17 Sir Richard Bishop, Robert Millis at The Park Church Co-op\n05/18 Alex G \"Rocket\" Release Show at The Park Church Co-op – Sold Out\n05/18 Rex Orange County\n05/18 Highly Suspect\n05/19 Odwalla1221, Sadaf, Chicklette, Halfpet\n05/20 Adult Mom (Record Release) w/ B.B, Baby Grill\n05/20 Prawn, Mumblr, Wild Pink, Hard Pass\n05/20 Mumdance, Mr. Mitch, Shy Eyez\n05/20 Silent Servant, Not Waving, Pye Corner Audio, Via App\n05/24 Pixies - SOLD OUT\n05/24 Conan, North, False Gods\n05/25 The Walters, Palmas\n05/27 Elf Power, Sunwatchers\n05/27 Lil Debbie\n05/30 Pet Symmetry, Ratboys\n06/03 Chocolat, Bueno\n06/04 The Orbiting Human Circus featuring The Music Tapes\n06/06 Black Marble at Good Room\n06/08 Aldous Harding\n06/08 She-Devils\n06/08 Meatbodies\n06/08 Pelada, CL, Ciarra Black\n06/08 Elysia Crampton, Moor Mother, Total Freedom\n06/09 Girlpool, IAN Sweet, Lexie\n06/09 Mirah\n06/13 Jessica Hernandez & the Deltas\n06/14 Man Forever (Record Release)\n06/15 Sarah Shook & the Disarmers\n06/17 Orchin, Hellrazor, Model/Actriz, Maneka\n06/21 PWR BTTM, Tancred, Fits\n06/24 Julie Byrne at the Park Church Co-op\n07/11 Stolen Jars, Fraternal Twin, Thelma, Poppies\n07/27 Mark McGuire, Ancient Ocean",
+        "distance": "89",
+        "startTime": "2017-06-13T19:00:00-0400",
+        "endTime": "2017-06-13T23:00:00-0400",
+        "timeFromNow": 5302362,
+        "category": "MUSIC_EVENT",
+        "stats": {
+            "attending": 3,
+            "declined": 0,
+            "maybe": 15,
+            "noreply": 0
+        },
+        "venue": {
+            "id": "460616340718401",
+            "name": "Baby's All Right",
+            "about": "babysallright@gmail.com",
+            "emails": ["babysallright@gmail.com"],
+            "coverPicture": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/16300274_1190598481053513_5678512810993788559_o.jpg?oh=dba6f85205e1c39c2b63ef34595116b3&oe=59587314",
+            "profilePicture": "https://scontent.xx.fbcdn.net/v/t1.0-1/p200x200/1480734_642185745894792_5820988503650852577_n.png?oh=c1b2de32d966516538b97e2d3515af69&oe=5984652D",
+            "category": "Dance & Night Club",
+            "category_list": ["Dance & Night Club", "Breakfast & Brunch Restaurant"],
+            "location": {
+                "city": "Brooklyn",
+                "country": "United States",
+                "latitude": 40.71012,
+                "longitude": -73.96348,
+                "state": "NY",
+                "street": "146 Broadway",
+                "zip": "11211"
+            }
+        }
+    }],
 	"metadata": {
 		"venues": 1,
 		"venuesWithEvents": 1,
