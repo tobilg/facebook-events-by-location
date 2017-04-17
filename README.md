@@ -20,13 +20,12 @@ The implementation of [facebook-events-by-location-core](https://github.com/tobi
 ## Installation
 
 ### As NPM package
-The application can be installed via 
 
-`npm install facebook-events-by-location`
+First, create a new folder: `$ mkdir fb-event-test` (where `fb-event-test` is just an example). 
 
-in the root directory, and either started with 
+Then change to the newly created directory, and do a quick initialization of your new project with `$ cd fb-event-test && npm init --yes`. 
 
-`npm start` or `node index.js`.
+The application can be installed via `$ npm install facebook-events-by-location` and started with `$ node node_modules/facebook-events-by-location/index.js`.
 
 ### Git
 To clone the repository, use
