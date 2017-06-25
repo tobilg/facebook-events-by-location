@@ -82,7 +82,7 @@ The response will be `application/json` and contain an `events` property contain
 
 ```javascript
 {
-	"events": [{
+    "events": [{
         "id": "194204067750547",
         "name": "Jessica Hernandez & the Deltas at Baby's All Right",
         "type": "public",
@@ -120,10 +120,10 @@ The response will be `application/json` and contain an `events` property contain
             }
         }
     }],
-	"metadata": {
-		"venues": 1,
-		"venuesWithEvents": 1,
-		"events": 4
-	}
+    "metadata": {
+        "venues": 1,
+        "venuesWithEvents": 1,
+        "events": 4
+    }
 }
 ```
