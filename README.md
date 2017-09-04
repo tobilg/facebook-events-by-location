@@ -82,48 +82,51 @@ The response will be `application/json` and contain an `events` property contain
 
 ```javascript
 {
-    "events": [{
-        "id": "194204067750547",
-        "name": "Jessica Hernandez & the Deltas at Baby's All Right",
-        "type": "public",
-        "coverPicture": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/17758407_10158752838305227_652819766277990370_o.jpg?oh=6f1076521abfe609f45c49f03b6ad3a7&oe=59978EB7",
-        "profilePicture": "https://scontent.xx.fbcdn.net/v/t1.0-0/c50.0.200.200/p200x200/17796620_10158752838305227_652819766277990370_n.jpg?oh=b8fd07b35c4f227e4837465e3abe7963&oe=594D43B4",
-        "description": "Tuesday June 13 @ Baby's All Right \n\nAdHoc Presents\n\nJessica Hernandez & The Deltas\n\nTIX: http://ticketf.ly/2oawOtz\n\n| Baby's All Right |\n146 Broadway @ Bedford Ave | Williamsburg, Brooklyn \nJMZ-Marcy, L-Bedford, G-Broadway | 7pm | $12+ | 18+\n\nSign up for the mailing list http://tinyurl.com/adhocfmlist\nSubscribe to our events http://facebook.com/adhocfm/events\n\nUpcoming AdHoc Shows\n\n04/13 Entrance (Guy Blakeslee), Ensalmo, Permanent Waves\n04/13 Kane West, Wharfwhit, Bruce Smear, Honnda\n04/14 Pharmakon (Record Release), Coteries, New Castrati\n04/15 Varsity, Fruit & Flowers, Petite League\n04/15 070Shake\n04/16 Lithics, Pucker Up, Bodega, Giggly Boys\n04/20 Helltrap Nightmare: the Hags Return\n04/20 The Coathangers \n04/21 The Coathangers\n04/22 Wolf Eyes (Record Release)\n04/22 Vatican Shadow\n04/23 Tonstartssbandht at The Park Church Co-op\n04/27 HAUX, Dizzy, Aisha Badru\n04/27 Sam Coffey & The Iron Lungs, Mikey Erg, The Othermen The Lame-Os\n04/27 Screaming Females\n04/28 Joakim, Starchild & The New Romantic\n04/28 Laser Background, Operator Music Band, Norwegian Arms, Railings\n04/29 White Lung\n05/02 Novelty Daughter, Elisa, Zenizen, Nicholas Nicholas\n05/03 The Revolution\n05/04 Emo Nite LA w/ special guests\n05/05 Omni, Honduras, Patio\n05/05 Ava Luna, Sammus, Mallrat\n05/05 Crushed (Record Release) w/ Sick Feeling, Neaux, Slashers\n05/05 Ava Luna, Sammus, Mall Rat\n05/05 Beanie Sigel, Manhattan Mal, Young Ros, Tim Wicked\n05/06 HOW SAD, Salt Cathedral\n05/06 Vagabon, Nnamdi Ogbonnaya, So Much Light\n05/07 Mega Bog, Tasseomancy\n05/09 Frank Carter & The Rattlesnakes, Dinosaur Pile-Up, Royal Republic\n05/09 Radkey\n05/09 Chastity at Shea Stadium\n05/09 Frank Carter & The Rattlesnakes, Dinosaur Pile-Up, Royal Republic\n05/10 Savoy Motel, Lionlimb\n05/10 Forest Swords, Actress, Umfang\n05/11 Tall Heights, Henry Jamison\n05/13 Alex Napping (Record Release), Pearer, gobbinjr, Long Neck\n05/13 Midnight Oil - SOLD OUT\n05/14 Midnight Oil\n05/14 Tall Juan (Record Release), Wild Yaks, Ben Katzman's Degreaser\n05/17 Sir Richard Bishop, Robert Millis at The Park Church Co-op\n05/18 Alex G \"Rocket\" Release Show at The Park Church Co-op – Sold Out\n05/18 Rex Orange County\n05/18 Highly Suspect\n05/19 Odwalla1221, Sadaf, Chicklette, Halfpet\n05/20 Adult Mom (Record Release) w/ B.B, Baby Grill\n05/20 Prawn, Mumblr, Wild Pink, Hard Pass\n05/20 Mumdance, Mr. Mitch, Shy Eyez\n05/20 Silent Servant, Not Waving, Pye Corner Audio, Via App\n05/24 Pixies - SOLD OUT\n05/24 Conan, North, False Gods\n05/25 The Walters, Palmas\n05/27 Elf Power, Sunwatchers\n05/27 Lil Debbie\n05/30 Pet Symmetry, Ratboys\n06/03 Chocolat, Bueno\n06/04 The Orbiting Human Circus featuring The Music Tapes\n06/06 Black Marble at Good Room\n06/08 Aldous Harding\n06/08 She-Devils\n06/08 Meatbodies\n06/08 Pelada, CL, Ciarra Black\n06/08 Elysia Crampton, Moor Mother, Total Freedom\n06/09 Girlpool, IAN Sweet, Lexie\n06/09 Mirah\n06/13 Jessica Hernandez & the Deltas\n06/14 Man Forever (Record Release)\n06/15 Sarah Shook & the Disarmers\n06/17 Orchin, Hellrazor, Model/Actriz, Maneka\n06/21 PWR BTTM, Tancred, Fits\n06/24 Julie Byrne at the Park Church Co-op\n07/11 Stolen Jars, Fraternal Twin, Thelma, Poppies\n07/27 Mark McGuire, Ancient Ocean",
-        "distance": "89",
-        "startTime": "2017-06-13T19:00:00-0400",
-        "endTime": "2017-06-13T23:00:00-0400",
-        "timeFromNow": 5302362,
-        "category": "MUSIC_EVENT",
-        "stats": {
-            "attending": 3,
-            "declined": 0,
-            "maybe": 15,
-            "noreply": 0
-        },
-        "venue": {
-            "id": "460616340718401",
-            "name": "Baby's All Right",
-            "about": "babysallright@gmail.com",
-            "emails": ["babysallright@gmail.com"],
-            "coverPicture": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/16300274_1190598481053513_5678512810993788559_o.jpg?oh=dba6f85205e1c39c2b63ef34595116b3&oe=59587314",
-            "profilePicture": "https://scontent.xx.fbcdn.net/v/t1.0-1/p200x200/1480734_642185745894792_5820988503650852577_n.png?oh=c1b2de32d966516538b97e2d3515af69&oe=5984652D",
-            "category": "Dance & Night Club",
-            "category_list": ["Dance & Night Club", "Breakfast & Brunch Restaurant"],
-            "location": {
-                "city": "Brooklyn",
-                "country": "United States",
-                "latitude": 40.71012,
-                "longitude": -73.96348,
-                "state": "NY",
-                "street": "146 Broadway",
-                "zip": "11211"
-            }
-        }
-    }],
-    "metadata": {
-        "venues": 1,
-        "venuesWithEvents": 1,
-        "events": 4
-    }
+	"events": [{
+		"id": "116647332331110",
+		"name": "Prawn, Slingshot Dakota, People Like You, Queen Moo",
+		"type": "public",
+		"coverPicture": "https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/21192424_1427554070660580_9176354166665292778_n.jpg?oh=ec701dee3019485d44779c978c2af3d2&oe=5A5EB0B5",
+		"profilePicture": "https://scontent.xx.fbcdn.net/v/t1.0-0/c163.0.200.200/p200x200/21192424_1427554070660580_9176354166665292778_n.jpg?oh=547d3ff8933c6987bcad8530558ca909&oe=5A2318A9",
+		"description": "Friday Dec 22nd @ Baby's All Right\n\nAdHoc Presents\n\nPrawn\nSlingshot Dakota\nPeople Like You\nQueen Moo\n\nTix, on-sale Wed 8/30 at 10am: http://ticketf.ly/2vwM2tV\n\n| Baby's All Right |\n146 Broadway @ Bedford Ave | Williamsburg, Brooklyn \nJMZ-Marcy, L-Bedford, G-Broadway | 7pm | $12+ | 18+\n\nSign up for the mailing list http://tinyurl.com/adhocfmlist\nSubscribe to our events http://facebook.com/adhocfm/events\n\nUpcoming AdHoc Shows\n\n08/28 Sound of Ceres (Residency), Kate Brehm - The Poof - Visual Performance, Foxes in Fiction\n09/01 Twerps, Free Time, Lionlimb\n09/02 White Hills, Spaceface, New Myths\n09/02 Crumb, Combo Chimbita, MIKE\n09/02 CRi, Rei Brown\n09/05 Dinner, Obliques, Nicholas Nicholas\n09/06 Laetitia Sadier Source Ensemble, Nicholas Krgovich, Astrobal\n09/06 Cende, Poppies, Anna McClellan, Spirit Was\n09/07 Remo Drive, McCafferty, Small Circle\n09/07 Rachel Baiman\n09/07 The Amazing Acro-Cats\n09/08 Four Year Strong, Seaway, Like Pacific, Grayscale, Life Lessons\n09/08 The Smith Street Band, Astronautalis\n09/08 Starcrawler, Honduras, Easy\n09/08 Dent May, Gemma\n09/08 Sextile, Surfbort, Black Beach\n09/08 Moon King, Dougie Poole, House of Feelings (live)\n09/08 The Amazing Acro-Cats\n09/09 The Amazing Acro-Cats\n09/09 The Amazing Acro-Cats\n09/09 Cones, Cassandra Jenkins, Dark Tea\n09/09 Four Year Strong, Seaway, Like Pacific, Grayscale, Life Lessons\n09/09 Chris Cohen, Cut Worms, Olden Yolk\n09/09 OctFest (Guided by Voices, Charles Bradley, Kilo Kish, Okkervil River)\n09/10 The Amazing Acro-Cats\n09/10 The Amazing Acro-Cats\n09/11 Mount Eerie\n09/12 Mount Eerie, Loren Connors\n09/12 Beverly, EZTV, Rips\n09/12 NOTS, Honey, Brandy\n09/12 Half Waif, Squad Car, Abandon, Coolin'\n09/13 Night Shop, Jaye Bartell\n09/13 Dear Nora, gobbinjr, Nicholas Krgovich\n09/13 Protomartyr, Pill, Bodega\n09/14 Sitcom, Jennifer Vanilla, Field Medic, DÆVA\n09/14 Blood Cultures, White Cliffs, Gus Dapperton\n09/15 Teen Commandments, Brothertiger\n09/15 Varsity, Hypoluxo, Thanks for Coming, Human People\n09/15 Throwing Snow, BAILE\n09/16 Steve Gunn, Julie Byrne, Myriam Gendron\n09/17 Ancient Ocean, Dave Harrington, Colin L, Adam Downey (DJ)\n09/19 GOLD DIME, Crown Larks, GDFX, Baby Birds Don't Drink Milk\n09/19 Madeline Kenney, Tall Friend, Trees Take Ease\n09/21 Cold Beat, War Bubble, Liberation\n09/22 Human Heat, Norwegian Arms\n09/22 Aerial East, Lola Kirke\n09/23 Love Theme, Bernardino Femminielli\n09/23 Hovvdy, Told Slant, Yohuna\n09/23 Drab Majesty, Kontravoid, Bernard Herman\n09/23 Cayetana, Hemming\n09/23 Flesh World, Home Blitz\n09/23 Xiu Xiu, Noveller, Re-TROS\n09/24 Painted Zeros, Slow Mass, Stove (solo), Bethlehem Steel\n09/27 Lina Tullgren (Release Show), Dougie Poole, Luxardo\n09/27 VNV Nation, iVardensphere – Sold Out\n09/27 Ian Chang (Record Release), Rahm, Nina Moffitt\n09/28 Container, Paleda, Young Male (DJ), Motiv-A, VIA APP (DJ)\n09/29 Princess Nokia\n09/29 Stolen Jars, Zula, Diners, Real Life Buildings\n09/29 Candi Pop\n10/02 Illegal Civ Cinema Tour Featuring: Denzel Curry & Show Me The Body, Show Me The Body\n10/05 The Babe Rainbow\n10/06 Paperhaus, Haybaby, Turnip King, Sic Tic\n10/06 Mirah, Jherek Bischoff\n10/06 LVL UP, Yowler, Slight\n10/06 Twinsmith\n10/06 The Golden Filter\n10/07 Frankie Cosmos, Ian Sweet, Nice Try\n10/07 The Proper Ornaments, Shadow Band, Kyle Forester\n10/07 Vetiver, Johnny Irion\n10/07 Deerhoof, Lily On Horn Horse\n10/07 LVL UP, Long Beard, Yucky Duster\n10/08 The Wonder Years, Laura Stevenson - Matinee Show\n10/08 The Wonder Years, Laura Stevenson, The Obsessives, Jetty Bones\n10/09 Naomi Punk, Shimmer, Lea Bertucci\n10/11 Sun Seeker\n10/12 Lust For Youth, Secret Boyfriend, Cienfuegos\n10/12 Adi Newton, James Place, Embryoroom\n10/13 Wolves In The Throne Room, Pillorian\n10/13 Skylar Spence, Jonah Baseball\n10/13 DJ Earl, Slick Shoota, Suzi Analogue, Mel G\n10/14 William Patrick Corgan\n10/15 William Patrick Corgan\n10/15 The Courtneys, Versing\n10/17 Dead Rider, Eaters, Christina Schneider's Genius Grant\n10/18 Grails\n10/19 Vita and The Woolf, Queen Of Jeans\n10/20 Alex Calder, Jay Weingarten, Sam Leidig\n10/20 Melkbelly, Anni Rossi, Maneka, Blue Smiley\n10/21 Scharpling & Wurster’s ‘Rock, Rot & Rule’ 20th Anniversary Extravaganza\n10/21 Sheer Mag\n10/23 Insane Clown Posse\n10/25 PUJOL\n10/26 Mild High Club, Anemone, Olden Yolk\n10/26 Walter TV\n10/26 Dälek, Street Sects, Vaureen\n10/27 Microwave, Big Jesus, Blis.\n10/27 Florist, Emily Yacina, Lizard Kisses\n10/27 Trevor Sensor\n10/27 Boy Harsher (Record Release), FlucT, Odonis Odonis\n10/28 Peelander-Z\n11/02 The Hotelier, Oso Oso, Alex Napping\n11/03 L.A. Witch\n11/03 AJJ, The Sidekicks\n11/03 J.Views, Ateller\n11/04 Ought\n11/04 Elysia Crampton, Earthly\n11/06 Cattle Decapitation, Revocation, Full of Hell, Artificial Brain\n11/09 Have Mercy, Boston Manor, Can't Swim, A Will Away\n11/11 Wax Tailor, Dirty Art Club\n11/11 A. Savage (Parquet Courts), Jack Cooper (Ultimate Painting)\n11/12 Listener, Levi The Poet, Comrades, Everett\n11/13 Omni\n11/16 Haux w/ Strings\n11/17 Downtown Boys, Olivia Neutron-John\n11/24 mewithoutYou, Pianos Become The Teeth, Slow Mass\n11/28 Lido Beach\n11/30 Emily Haines & The Soft Skeleton\n12/01 Neil Hilborn\n12/06 Pinegrove, Saintseneca, Adult Mom – Sold Out\n12/07 Pinegrove, Saintseneca, Adult Mom – Sold Out\n12/08 Gabriel Garzón-Montano",
+		"distance": "89",
+		"startTime": "2017-12-22T19:00:00-0500",
+		"endTime": null,
+		"timeFromNow": 9468080,
+		"category": "MUSIC_EVENT",
+		"ticketing": {
+			"ticket_uri": "http://ticketf.ly/2wVV87f"
+		},
+		"stats": {
+			"attending": 38,
+			"declined": 0,
+			"maybe": 151,
+			"noreply": 21
+		},
+		"venue": {
+			"id": "460616340718401",
+			"name": "Baby's All Right",
+			"about": "babysallright@gmail.com",
+			"emails": ["babysallright@gmail.com"],
+			"coverPicture": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/20507438_1418517768261582_7945740169309872258_o.jpg?oh=cee452a92068d3011c319c9d1bef63d0&oe=5A501178",
+			"profilePicture": "https://scontent.xx.fbcdn.net/v/t1.0-1/p200x200/1480734_642185745894792_5820988503650852577_n.png?oh=115d8c043d25e71635906461044539b5&oe=5A22992D",
+			"category": "Bar",
+			"categoryList": ["Bar", "Breakfast & Brunch Restaurant", "Dance & Night Club"],
+			"location": {
+				"city": "Brooklyn",
+				"country": "United States",
+				"latitude": 40.71012,
+				"longitude": -73.96348,
+				"state": "NY",
+				"street": "146 Broadway",
+				"zip": "11211"
+			}
+		}
+	}],
+	"metadata": {
+		"venues": 1,
+		"venuesWithEvents": 1,
+		"events": 1
+	}
 }
 ```
