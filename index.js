@@ -97,10 +97,10 @@ app.get("/events", cors(corsOptions), function(req, res) {
         }
 
         // Instantiate EventSearch
-        var es = new EventSearch(options);
+        var es = new EventSearch();
 
         // Search and handle results
-        es.search().then(function (events) {
+        es.search(options).then(function (events) {
             res.json(events);
         }).catch(function (error) {
             res.status(500).json(error);
