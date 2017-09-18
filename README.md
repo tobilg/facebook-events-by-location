@@ -64,6 +64,7 @@ Mandatory parameters are the following:
 Non-mandatory parameters
 
 * `query`: The term(s) on which you want to narrow down your *location search* (this only filters the places, not the events itself!).
+* `categories`: The comma-separated list of [place categories](https://developers.facebook.com/docs/places/web/search#categories) that should be searched for. Valid entries are `ARTS_ENTERTAINMENT`, `EDUCATION`, `FITNESS_RECREATION`, `FOOD_BEVERAGE`, `HOTEL_LODGING`, `MEDICAL_HEALTH`, `SHOPPING_RETAIL`, `TRAVEL_TRANSPORTATION`. Default is none.  
 * `accessToken`: The **App Access Token** to be used for the requests to the Graph API.
 * `distance`: The distance in meters (it makes sense to use smaller distances, like max. 2500). Default is `100`.
 * `sort`: The results can be sorted by `time`, `distance`, `venue` or `popularity`. If omitted, the events will be returned in the order they were received from the Graph API.

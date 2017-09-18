@@ -83,6 +83,17 @@ app.get("/events", cors(corsOptions), function(req, res) {
         if (req.query.query) {
             options.query = req.query.query;
         }
+        if (req.query.categories) {
+            var categories = [];
+            if (req.query.categories.length > 0) {
+                if (req.query.categories.indexOf(",") > -1) {
+                    categories = req.query.categories.split(",");
+                } else {
+                    categories.push(req.query.categories);
+                }
+            }
+            options.categories = categories;
+        }
         if (req.query.sort) {
             options.sort = req.query.sort;
         }
