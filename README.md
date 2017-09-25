@@ -75,6 +75,19 @@ Non-mandatory parameters
 ### Query results
 The response will be `application/json` and contain an `events` property containing the array of event objects, as well as a `metadata` property with some stats. See below for an example.
 
+#### Location/Place data in the query result
+
+There are two types of locations in the resulting event JSON objects:
+
+* `place`: This is the consolidated Place object from the Venue (which is actually the Page object which was returned from the Place search), and the Event's place data. The latter will supersede the Place page data.
+* `venue.location`: This is the location data of the Page object.
+
+As the Facebook Graph API can only be queried for Places via coordinate/distance, and Events can have their own, "real" location, it's possible that the place data which is found in `place` can be outside the boundaries of the original query. 
+
+Consequences:
+* If you want consistency regarding query vs. results, you should use `venue.location`. 
+* If you want accuracy regarding the real event location, you should use `place`. 
+
 ### Sample call
 
 `http://localhost:3000/events?lat=40.710803&lng=-73.964040&distance=100&sort=venue&accessToken=YOUR_APP_ACCESS_TOKEN` (make sure you replace `YOUR_APP_ACCESS_TOKEN` with a real access token!)
@@ -97,6 +110,19 @@ The response will be `application/json` and contain an `events` property contain
 		"category": "MUSIC_EVENT",
 		"ticketing": {
 			"ticket_uri": "http://ticketf.ly/2wVV87f"
+		},
+		"place": {
+			"id": "460616340718401",
+			"name": "Baby's All Right",
+			"location": {
+				"city": "Brooklyn",
+				"country": "United States",
+				"latitude": 40.71012,
+				"longitude": -73.96348,
+				"state": "NY",
+				"street": "146 Broadway",
+				"zip": "11211"
+			}
 		},
 		"stats": {
 			"attending": 38,
@@ -127,7 +153,7 @@ The response will be `application/json` and contain an `events` property contain
 	"metadata": {
 		"venues": 1,
 		"venuesWithEvents": 1,
-		"events": 1
+		"events": 4
 	}
 }
 ```
