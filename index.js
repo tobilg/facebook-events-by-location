@@ -11,6 +11,11 @@ var EventSearch = require("facebook-events-by-location-core");
 // Create the Express object
 var app = express();
 
+// Get real ip if passed by nginx
+morgan.token("remote-addr", function (req) {
+    return req.headers["x-real-ip"] || req.headers["x-forwarded-for"] || req.connection.remoteAddress;
+});
+
 // Use morgan for logging
 app.use(morgan("combined"));
 
@@ -105,6 +110,9 @@ app.get("/events", cors(corsOptions), function(req, res) {
         }
         if (req.query.until) {
             options.until = req.query.until;
+        }
+        if (req.query.showActiveOnly && req.query.showActiveOnly === "false") {
+            options.showActiveOnly = Boolean(req.query.showActiveOnly);
         }
 
         // Instantiate EventSearch

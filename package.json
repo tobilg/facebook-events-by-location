@@ -11,7 +11,7 @@
     "backend",
     "app"
   ],
-  "version": "0.10.1",
+  "version": "0.11.0",
   "private": false,
   "scripts": {
     "start": "node ./index",
@@ -20,8 +20,8 @@
   },
   "dependencies": {
     "cors": "^2.8.4",
-    "express": "^4.16.1",
-    "facebook-events-by-location-core": "^0.6.1",
+    "express": "^4.16.2",
+    "facebook-events-by-location-core": "^0.7.0",
     "morgan": "^1.9.0"
   },
   "bugs": {

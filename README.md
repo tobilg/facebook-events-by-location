@@ -71,6 +71,7 @@ Non-mandatory parameters
 * `version`: The version of the Graph API to use. Default is `v2.7`.
 * `since`: The start of the range to filter results. Format is Unix timestamp or `strtotime` data value, as accepted by [FB Graph API](https://developers.facebook.com/docs/graph-api/using-graph-api#time).
 * `until`: The end of the range to filter results.
+* `showActiveOnly`: Whether to show only active (non-draft, non-cancalled Events). Default is `true`, otherwise `false` can be passed to show all Events regardless of their state. 
 
 ### Query results
 The response will be `application/json` and contain an `events` property containing the array of event objects, as well as a `metadata` property with some stats. See below for an example.
@@ -107,6 +108,8 @@ Consequences:
 		"startTime": "2017-12-22T19:00:00-0500",
 		"endTime": null,
 		"timeFromNow": 9468080,
+		"isDraft": false,
+		"isCancelled": false,
 		"category": "MUSIC_EVENT",
 		"ticketing": {
 			"ticket_uri": "http://ticketf.ly/2wVV87f"
