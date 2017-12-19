@@ -21,7 +21,7 @@ app.use(morgan("combined"));
 
 // Set application properties
 app.set("host", process.env.HOST || "0.0.0.0");
-app.set("port", process.env.PORT0 || 3000);
+app.set("port", process.env.PORT || 3000);
 app.set("x-powered-by", false);
 app.set("etag", false);
 
