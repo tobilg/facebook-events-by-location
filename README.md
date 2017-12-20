@@ -54,6 +54,10 @@ You can use the following environment variables to influence the application:
 ## API
 The basic endpoint is `GET /events`, but there's also a `GET /health` endpoint to enable health checks.
 
+### Swagger API docs
+
+The Swagger API docs are available at [http://tobilg.github.io/facebook-events-by-location/](http://tobilg.github.io/facebook-events-by-location/).
+
 ### Query paramenters
 
 Mandatory parameters are the following:
