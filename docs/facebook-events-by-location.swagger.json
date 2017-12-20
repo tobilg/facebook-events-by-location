@@ -82,13 +82,13 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "200 response",
+            "description" : "Successful response",
             "schema" : {
               "$ref" : "#/definitions/EventResponse"
             }
           },
-          "400" : {
-            "description" : "500 response",
+          "500" : {
+            "description" : "Error response",
             "schema" : {
               "$ref" : "#/definitions/ErrorResponse"
             }
