@@ -1,0 +1,366 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "2017-12-20T12:37:36Z",
+    "title" : "facebook-events-by-location"
+  },
+  "host" : "facebook-events-by-location.herokuapp.com",
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/events" : {
+      "get" : {
+        "tags" : [ "Query" ],
+        "summary" : "Query Facebook events by location",
+        "description" : "This resource can be used to query Facebook Graph API events by location.",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "lat",
+          "in" : "query",
+          "description" : "The latitude of the position/coordinate the events shall be returned for.",
+          "required" : true,
+          "type" : "number"
+        }, {
+          "name" : "lng",
+          "in" : "query",
+          "description" : "The longitude of the position/coordinate the events shall be returned for.",
+          "required" : true,
+          "type" : "number"
+        }, {
+          "name" : "query",
+          "in" : "query",
+          "description" : "The term(s) on which you want to narrow down your location search (this only filters the places, not the events itself!).",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "categories",
+          "in" : "query",
+          "description" : "The comma-separated list of place categories that should be searched for. Valid entries are ARTS_ENTERTAINMENT, EDUCATION, FITNESS_RECREATION, FOOD_BEVERAGE, HOTEL_LODGING, MEDICAL_HEALTH, SHOPPING_RETAIL, TRAVEL_TRANSPORTATION. Default is none.",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "accessToken",
+          "in" : "query",
+          "description" : "The App Access Token to be used for the requests to the Graph API.",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "distance",
+          "in" : "query",
+          "description" : "The distance in meters (it makes sense to use smaller distances, like max. 2500). Default is 100.",
+          "required" : false,
+          "type" : "number"
+        }, {
+          "name" : "sort",
+          "in" : "query",
+          "description" : "The results can be sorted by time, distance (legacy option, will be removed in future release), venueDistance, eventDistance, venue or popularity. If omitted, the events will be returned in the order they were received from the Graph API.",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "version",
+          "in" : "query",
+          "description" : "The version of the Graph API to use. Default is v2.10.",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "since",
+          "in" : "query",
+          "description" : "The start of the range to filter results. Format is Unix timestamp or strtotime data value, as accepted by FB Graph API.",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "until",
+          "in" : "query",
+          "description" : "The end of the range to filter results.",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "showActiveOnly",
+          "in" : "query",
+          "description" : "Whether to show only active (non-draft, non-cancalled Events). Default is true, otherwise false can be passed to show all Events regardless of their state.",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/EventResponse"
+            }
+          },
+          "400" : {
+            "description" : "500 response",
+            "schema" : {
+              "$ref" : "#/definitions/ErrorResponse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "EventResponse" : {
+      "type": "object",
+      "properties": {
+        "events": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "coverPicture": {
+                "type": "string"
+              },
+              "profilePicture": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "distance": {
+                "type": "number"
+              },
+              "startTime": {
+                "type": "string"
+              },
+              "endTime": {
+                "type": "string"
+              },
+              "timeFromNow": {
+                "type": "integer"
+              },
+              "isCancelled": {
+                "type": "boolean"
+              },
+              "isDraft": {
+                "type": "boolean"
+              },
+              "category": {
+                "type": "string"
+              },
+              "ticketing": {
+                "type": "object",
+                "properties": {
+                  "ticket_uri": {
+                    "type": "string"
+                  },
+                  "terms_uri": {
+                    "type": "string"
+                  },
+                  "privacy_uri": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "distances": {
+                "type": "object",
+                "properties": {
+                  "venue": {
+                    "type": "number"
+                  },
+                  "event": {
+                    "type": "number"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "place": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "location": {
+                    "type": "object",
+                    "properties": {
+                      "city": {
+                        "type": "string"
+                      },
+                      "country": {
+                        "type": "string"
+                      },
+                      "latitude": {
+                        "type": "number"
+                      },
+                      "longitude": {
+                        "type": "number"
+                      },
+                      "state": {
+                        "type": "string"
+                      },
+                      "street": {
+                        "type": "string"
+                      },
+                      "zip": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "latitude",
+                      "longitude"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "additionalProperties": false
+              },
+              "stats": {
+                "type": "object",
+                "properties": {
+                  "attending": {
+                    "type": "integer"
+                  },
+                  "declined": {
+                    "type": "integer"
+                  },
+                  "maybe": {
+                    "type": "integer"
+                  },
+                  "noreply": {
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "attending",
+                  "declined",
+                  "maybe",
+                  "noreply"
+                ],
+                "additionalProperties": false
+              },
+              "venue": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "about": {
+                    "type": "string"
+                  },
+                  "emails": {
+                    "type": "array"
+                  },
+                  "coverPicture": {
+                    "type": "string"
+                  },
+                  "profilePicture": {
+                    "type": "string"
+                  },
+                  "category": {
+                    "type": "string"
+                  },
+                  "categoryList": {
+                    "type": "array",
+                    "items": {
+
+                    }
+                  },
+                  "location": {
+                    "type": "object",
+                    "properties": {
+                      "city": {
+                        "type": "string"
+                      },
+                      "country": {
+                        "type": "string"
+                      },
+                      "latitude": {
+                        "type": "number"
+                      },
+                      "longitude": {
+                        "type": "number"
+                      },
+                      "state": {
+                        "type": "string"
+                      },
+                      "street": {
+                        "type": "string"
+                      },
+                      "zip": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "latitude",
+                      "longitude"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "id",
+                  "name",
+                  "location"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "distance",
+              "startTime",
+              "timeFromNow",
+              "distances",
+              "stats",
+              "venue"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "venues": {
+              "type": "integer"
+            },
+            "venuesWithEvents": {
+              "type": "integer"
+            },
+            "events": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "venues",
+            "venuesWithEvents",
+            "events"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "events",
+        "metadata"
+      ],
+      "additionalProperties": false
+    },
+    "ErrorResponse" : {
+      "type" : "object",
+      "required" : [ "message" ],
+      "properties" : {
+        "message" : {
+          "type" : "string"
+        },
+        "code" : {
+          "type" : "number"
+        }
+      },
+      "description" : "Model for error response"
+    }
+  }
+}
