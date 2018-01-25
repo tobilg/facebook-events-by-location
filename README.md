@@ -41,7 +41,7 @@ The service can be launched via Docker like this:
 
 `docker run -d --name fb-event-search -p 3000:3000 tobilg/facebook-event-search`
 
-This would expose the app on port 3000 on the Docker host. If you want to specify another port for the app, you can use `-e "PORT0=10000"` together with `--net="host"` (be aware of the security implications of host networking). 
+This would expose the app on port 3000 on the Docker host. If you want to specify another port for the app, you can use `-e "PORT=10000"` together with `--net="host"` (be aware of the security implications of host networking). 
 
 ## Environment variables
 You can use the following environment variables to influence the application:
@@ -49,7 +49,7 @@ You can use the following environment variables to influence the application:
 * `FEBL_ACCESS_TOKEN`: Used to define a general **App Access Token** to be used for the requests to the Graph API. This is overridden if the request specifies an `accessToken` parameter. If it's not specified, every request to `/events` needs to contain an `accessToken` parameter.
 * `FEBL_CORS_WHITELIST`: You can pass a comma-separated domain whitelist to enable CORS headers (e.g. `http://www.test.com,http://www.test.org`). If you don't specify this variable, CORS will be enabled on all origins.
 * `HOST`: The IP address the Express application should bind to. Default is `0.0.0.0` (all available IP addresses).
-* `PORT0`: The port on which the application should run. Default is `3000`.
+* `PORT`: The port on which the application should run. Default is `3000`.
 
 ## API
 The basic endpoint is `GET /events`, but there's also a `GET /health` endpoint to enable health checks.
