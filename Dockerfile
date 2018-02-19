@@ -1,5 +1,5 @@
 FROM mhart/alpine-node:4
-MAINTAINER tobilg <fb.tools.github@gmail.com>
+MAINTAINER tobilg <tobilg@gmail.com>
 
 # Overall ENV vars
 ENV APP_BASE_PATH /opt/service
