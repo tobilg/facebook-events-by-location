@@ -139,9 +139,6 @@
               "isCancelled": {
                 "type": "boolean"
               },
-              "isDraft": {
-                "type": "boolean"
-              },
               "category": {
                 "type": "string"
               },
