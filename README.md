@@ -1,6 +1,9 @@
 # Search Facebook events by location (as a service)
 A Express.js-based webservice to get public Facebook events by location and distances, as well as search terms. It can be used as a starting point for an location-based app for example. 
 
+## Current FB issues
+**This package is currently no longer usable, because FB changed the way one can access the event data. It seems that access to the Events API is no longer granted, see the lengthy discussion at [facebook-events-by-location-core/#29](https://github.com/tobilg/facebook-events-by-location-core/issues/29).**
+
 ## Motivation
 As Facebook has discontinued the FQL query API for all apps created after 2014-04-30, it has gotten much more complicated to search for public Facebook events by location and distances. This is the reason why this project was created.
 
